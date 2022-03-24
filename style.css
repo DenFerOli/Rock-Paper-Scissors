@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(213, 253, 240);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.rock-paper-scissors{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#player2{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-style: solid;
+    text-align: center;
+}
