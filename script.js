@@ -3,11 +3,19 @@ function randomValue(){
 }
 
 function showPlayer2Play(play){
-    var player2 = document.createElement("div");
+    var player2 = document.createElement("img");
     player2.setAttribute("id", "player2");
-    var player2play = document.createTextNode(play);
-    player2.appendChild(player2play);
+
+    if(play == 0){
+        player2.setAttribute("class", "rock");
+    } else if(play == 1){
+        player2.setAttribute("class", "paper");
+    } else {
+        player2.setAttribute("class", "scissors");
+    }
+
     document.body.appendChild(player2);
+
 }
 
 function showResult(result){
@@ -21,7 +29,7 @@ function showResult(result){
 function playAgain(){
     var playAgain = document.createElement("button");
     playAgain.setAttribute("id", "play-again");
-    var playAgainText = document.createTextNode("Play Again")
+    var playAgainText = document.createTextNode("Play Again?")
     playAgain.appendChild(playAgainText);
     document.body.appendChild(playAgain);
 
@@ -60,16 +68,16 @@ rock.addEventListener("click", function(){
     disableBoxes();
     
     if(playerPlay == 0){
-        showPlayer2Play("Rock");
+        showPlayer2Play(0);
         showResult("Draw!");
         playAgain();
 
     } else if(playerPlay == 1){
-        showPlayer2Play("Paper");
+        showPlayer2Play(1);
         showResult("You Lose!");
         playAgain();
     } else {
-        showPlayer2Play("Scissors");
+        showPlayer2Play(2);
         showResult("You Win!");
         playAgain();
     }
@@ -82,16 +90,16 @@ paper.addEventListener("click", function(){
     disableBoxes();
 
     if(playerPlay == 0){
-        showPlayer2Play("Rock");
+        showPlayer2Play(0);
         showResult("You Win!");
         playAgain();
 
     } else if(playerPlay == 1){
-        showPlayer2Play("Paper");
+        showPlayer2Play(1);
         showResult("Draw!");
         playAgain();
     } else {
-        showPlayer2Play("Scissors");
+        showPlayer2Play(2);
         showResult("You Lose!");
         playAgain();
     }
@@ -104,16 +112,16 @@ scissors.addEventListener("click", function(){
     disableBoxes();
 
     if(playerPlay == 0){
-        showPlayer2Play("Rock");
+        showPlayer2Play(0);
         showResult("You Lose!");
         playAgain();
 
     } else if(playerPlay == 1){
-        showPlayer2Play("Paper");
+        showPlayer2Play(1);
         showResult("You Win!");
         playAgain();
     } else {
-        showPlayer2Play("Scissors");
+        showPlayer2Play(2);
         showResult("Draw!");
         playAgain();
     }

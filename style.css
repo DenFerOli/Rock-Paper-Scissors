@@ -16,16 +16,68 @@ ul li{
     display: inline-block;
 }
 
-.rock-paper-scissors{
+.rock{
+    cursor: pointer;
+    background-image: url(img/rock.png);
+    background-size: cover;
     width: 100px;
     height: 100px;
     margin: 10px;
+    border-radius: 20px;
+}
+
+#rock:hover{
+    background-color: aqua;
+}
+
+.paper{
+    cursor: pointer;
+    background-image: url(img/paper.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#paper:hover{
+    background-color: aqua;
+}
+
+.scissors{
+    cursor: pointer;
+    background-image: url(img/scissors.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#scissors:hover{
+    background-color: aqua;
 }
 
 #player2{
-    height: 100px;
-    width: 100px;
-    margin: 10px;
+    cursor: default; 
     border-style: solid;
-    text-align: center;
+    border-color: black;
+}
+
+#result{
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#play-again{
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
