@@ -71,15 +71,18 @@ rock.addEventListener("click", function(){
         showPlayer2Play(0);
         showResult("Draw!");
         playAgain();
+        player2.style = "background-color: grey"
 
     } else if(playerPlay == 1){
         showPlayer2Play(1);
         showResult("You Lose!");
+        player2.style = "background-color: red"
         playAgain();
     } else {
         showPlayer2Play(2);
         showResult("You Win!");
         playAgain();
+        player2.style = "background-color: green"
     }
 })
 
@@ -93,15 +96,17 @@ paper.addEventListener("click", function(){
         showPlayer2Play(0);
         showResult("You Win!");
         playAgain();
-
+        player2.style = "background-color: green"
     } else if(playerPlay == 1){
         showPlayer2Play(1);
         showResult("Draw!");
         playAgain();
+        player2.style = "background-color: grey"
     } else {
         showPlayer2Play(2);
         showResult("You Lose!");
         playAgain();
+        player2.style = "background-color: red"
     }
 })
 
@@ -115,14 +120,16 @@ scissors.addEventListener("click", function(){
         showPlayer2Play(0);
         showResult("You Lose!");
         playAgain();
-
+        player2.style = "background-color: red"
     } else if(playerPlay == 1){
         showPlayer2Play(1);
         showResult("You Win!");
         playAgain();
+        player2.style = "background-color: green"
     } else {
         showPlayer2Play(2);
         showResult("Draw!");
         playAgain();
+        player2.style = "background-color: grey"
     }
 })
