@@ -76,7 +76,7 @@ rock.addEventListener("click", function(){
     } else if(playerPlay == 1){
         showPlayer2Play(1);
         showResult("You Lose!");
-        player2.style = "background-color: red"
+        player2.style = "background-color: red";
         playAgain();
     } else {
         showPlayer2Play(2);

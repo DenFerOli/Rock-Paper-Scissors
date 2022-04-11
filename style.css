@@ -77,7 +77,7 @@ ul li{
     top: 90px;
     left: 580px;
     cursor: default;
-    border: #000;
+    border: 1px solid #000;
 }
 
 #result{
