@@ -7,15 +7,14 @@ function showPlayer2Play(play){
     player2.setAttribute("id", "player2");
 
     if(play == 0){
-        player2.setAttribute("class", "rock");
+        player2.setAttribute("class", "rock-paper-scissors-container rock");
     } else if(play == 1){
-        player2.setAttribute("class", "paper");
+        player2.setAttribute("class", "rock-paper-scissors-container paper");
     } else {
-        player2.setAttribute("class", "scissors");
+        player2.setAttribute("class", "rock-paper-scissors-container scissors");
     }
 
     document.body.appendChild(player2);
-
 }
 
 function showResult(result){
@@ -45,7 +44,7 @@ function playAgain(){
     var deletePlayAgain = document.querySelector("#play-again");
     deletePlayAgain.parentNode.removeChild(deletePlayAgain);
 
-    ableBoxes();
+    enableBoxes();
 })
 }
 
@@ -55,7 +54,7 @@ function disableBoxes(){
     document.querySelector("#scissors").disabled = true;
 }
 
-function ableBoxes(){
+function enableBoxes(){
     document.querySelector("#rock").disabled = false;
     document.querySelector("#paper").disabled = false;
     document.querySelector("#scissors").disabled = false;
