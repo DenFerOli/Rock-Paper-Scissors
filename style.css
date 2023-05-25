@@ -142,3 +142,9 @@ main {
 #play-again:hover{
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .rock-paper-scissors-main-container {
+        width: 90%;
+    }
+}
