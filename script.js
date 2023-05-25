@@ -7,11 +7,11 @@ function showPlayer2Play(play){
     player2.setAttribute("id", "player2");
 
     if(play == 0){
-        player2.setAttribute("class", "rock-paper-scissors-container rock");
+        player2.setAttribute("class", "rock-paper-scissors-container-results rock");
     } else if(play == 1){
-        player2.setAttribute("class", "rock-paper-scissors-container paper");
+        player2.setAttribute("class", "rock-paper-scissors-container-results paper");
     } else {
-        player2.setAttribute("class", "rock-paper-scissors-container scissors");
+        player2.setAttribute("class", "rock-paper-scissors-container-results scissors");
     }
 
     document.body.appendChild(player2);

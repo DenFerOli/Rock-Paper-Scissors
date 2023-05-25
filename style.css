@@ -70,6 +70,19 @@ main {
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
+.rock-paper-scissors-container-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: black;
+    border-style: none;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 .rock {
     height: 98px;
     width: 98px;
