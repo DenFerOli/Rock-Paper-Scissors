@@ -106,14 +106,14 @@ main {
 
 #player2{
     position: relative;
-    top: 90px;
+    top: 20px;
     cursor: default;
     border: 1px solid #000;
 }
 
 #result{
     position: relative;
-    top: 100px;
+    top: 30px;
     text-align: center;
     margin: 10px;
     font-size: 30px;
@@ -124,7 +124,7 @@ main {
 
 #play-again{
     position: relative;
-    top: 100px;
+    top: 40px;
     margin: 5px;
     padding: 8px;
     width: 150px;
